@@ -1,0 +1,150 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+}
+
+form .submit:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url(Poze/boxer.jpg);
+    background-size: auto;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+nav
+{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+
+nav li
+{
+	display: inline-block;
+}
+
+nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+}
+
+nav li.active a 
+{
+	border: 1px solid black;
+}
+
+nav li a:hover
+{
+	border: 1px solid black;
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolut;
+    background-color: black;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 40px;
+    padding: 18px 20px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: table-column;
+}
+
+@keyframes drop
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.row
+{
+	max-width: 1000px;
+	margin: auto;
+}
+
+
+
+/*
+#inreg 
+{
+    position: absolute;
+	width: 1000px;
+	margin-left: 150px;
+	margin-top: 160px;
+}
+
+#inreg form label 
+{
+    display: flex;
+    color: darkblue;
+    font-size: 20px;
+}
+
+#inreg form h4
+{
+    display: flex;
+    color: black;
+    font-size: 20px;
+}

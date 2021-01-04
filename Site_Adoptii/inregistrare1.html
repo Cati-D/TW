@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Adoptii</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link href="Inregistrare.css" rel="stylesheet" type="text/css">
+        <script src="Inregistrare.js"></script>
+    </head>
+    
+    <body>
+        <header>
+			<div class="row"> 
+				<div class="logo">
+					<img src="Poze/logo.jpg" alt="Smiley face :)">
+				</div>
+			    <nav>
+			         <li class="active" ><a href="Adoptii.html"> ACASA </a></li>
+                    <li><a href="Adoptii1.html"> DESPRE </a></li>
+                    <div class="dropdown">
+                         <li><a href="#animale"> ANIMALE </a></li>
+                        <div class="dropdown-content"> 
+                            <li> <a href="#caine"> Caini </a></li>
+                            <li ><a href="#hamster"> Hamsteri </a></li>
+                            <li ><a href="#pisica"> Pisici </a></li>   
+                            <li ><a href="#vidra"> Vidre </a></li>
+                        </div>
+                    </div>
+                    <li><a href="#contact"> CONTACT </a></li>
+                    <li><a href="Inregistrare.html"> INREGISTRARE </a></li>
+                </nav>
+            </div>
+         </header>
+     
+        <div id="inreg">
+            <form action="/action_page.php" method="post" id = "formular">
+                <div>
+                    <label for="name">Nume:</label>
+                    <input type="text" name="name" id="name" value="" tabindex="1" required/>
+                    <p id = "errorName"></p>
+
+                    <label for="name">Preume:</label>
+                    <input type="text" name="name" id="prenume" value="" tabindex="1" required/>
+                    <p id = "errorName"></p>
+
+                    <label for="numar">Numar de telefon:</label>
+                    <input type="number" name="nuamrDeTelefon" id="yourNumber" value="" tabindex="1"required>
+                    <p id = "errorNumber"></p>
+
+                    <label for="text">Adresa de mail:</label>
+                    <input type="text" name="name" id="mail" value="@gmail.com" tabindex="1" required>
+                    <p id = "errorMail"></p>
+                </div><br>
+
+                <div>
+                    <h4>Ce te gandesti sa adopti? </h4>
+                    <label for="radio-choice-1">Caine</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="caine" />
+                
+                    <label for="radio-choice-1">Pisica</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="pisica" />
+                
+                    <label for="radio-choice-1">Vidra</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="vidra" />
+                
+                    <label for="radio-choice-1">Hamster</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="hamster" />
+                </div><br>
+
+
+                 <div>
+                    <label for="select-choice">Sexul: </label>
+                    <select name="select-choice" id="select-choice">
+                        <option value="Choice 1">-</option>
+                        <option value="Choice 2">Masculin</option>
+                        <option value="Choice 3">Feminin</option>
+                    </select>
+                </div><br>
+
+                <div>
+                    <label for="textarea">Nu te-am intrebat, dar ai vrea sa ne spui: </label>
+                    <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                </div>
+
+                <div>
+                    <label for="checkbox">Am citit si sunt de acord cu oferirea informatiilor: </label>
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                </div>
+
+                <div>
+                    <input type="submit" name="" class="btn btn-primary"/>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+
+</html>
+
+
+

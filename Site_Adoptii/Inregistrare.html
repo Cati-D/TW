@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Adoptii</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link href="Inregistrare.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body id="bdy">
+        <header>
+			<div class="row"> 
+			    <nav>
+			         <li class="active" ><a href="Adoptii.html"> ACASA </a></li>
+                    <li><a href="Adoptii1.html"> DESPRE </a></li>
+                    <div class="dropdown">
+                         <li><a href="#animale"> ANIMALE </a></li>
+                        <div class="dropdown-content"> 
+                            <li> <a href="#caine"> Caini </a></li>
+                            <li ><a href="#hamster"> Hamsteri </a></li>
+                            <li ><a href="#pisica"> Pisici </a></li>   
+                            <li ><a href="#vidra"> Vidre </a></li>
+                        </div>
+                    </div>
+                    <li><a href="Contact.html"> CONTACT </a></li>
+                    <li><a href="Inregistrare.html"> INREGISTRARE </a></li>
+                </nav>
+            </div>
+         </header>
+     
+    
+        <div class="contact-form">
+            <form id = "contact-form">
+                   <br><br><br><br><br><br><br>
+                   <div class="form-group">
+                    <input type="text" name= "" id="name" class="form-control" placeholder="Nume" required>
+                    <span id="errorName" ></span>
+                    </div><br>
+
+                    <div class="form-group">
+                    <input type="text" name="" id="surname" class="form-control" placeholder="Prenume" required>
+                    <span id="errorSurname"></span>
+                    </div><br>
+
+                    <div class="form-group">
+                    <input type="tel" name="" id="number" class="form-control" placeholder="Numar de telefon" required>
+                    <span id="errorNumber" ></span>
+                    </div><br>
+
+                    <div class="form-group">
+                    <input type="email" name="" id="email" class="form-control" placeholder="Email" required>
+                    <span id="errorEmail" ></span>
+                    </div><br>
+
+                    <div class="form-group">
+                    <input type="password" name="" id="pass" class = "form-control" placeholder="Parola" required>
+                    <span id="errorPass"></span>
+                    <br></div>
+
+                    <div class="form-group">
+                    <input type="password" name="" id="cpass" class = "form-control" placeholder="Confirmare Parola" required>
+                    <span id="errorPassc"></span>
+                    <br></div>
+
+                    <div class="form-group">
+                    <input type="date" name="" id="birth" class = "form-control" placeholder="Data nasterii" required>
+                    </div><br>
+                    <div id="displayDob"></div>
+                    <br>
+
+
+                <div>
+                    <h4>Ce te gandesti sa adopti? </h4>
+                    <label for="radio-choice-1">Caine</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="caine" />
+                    <br>
+
+                    <label for="radio-choice-1">Pisica</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-2" tabindex="2" value="pisica" />
+                    <br>
+
+                    <label for="radio-choice-1">Vidra</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-3" tabindex="2" value="vidra" />
+                    <br>
+
+                    <label for="radio-choice-1">Hamster</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-4" tabindex="2" value="hamster" />
+                </div><br>
+
+
+                 <div>
+                    <label for="select-choice">Sexul: </label>
+                    <select name="select-choice" id="select-choice">
+                        <option value="Choice 1">-</option>
+                        <option value="Choice 2">Masculin</option>
+                        <option value="Choice 3">Feminin</option>
+                    </select>
+                </div><br>
+
+                <div>
+                    <label for="textarea">Nu te-am intrebat, dar ai vrea sa ne spui: </label><br>
+                    <textarea name="message" class="form-control" placeholder="Text ..." row="4"></textarea>
+                </div>
+
+                <div>
+                    <label for="checkbox">Am citit si sunt de acord cu oferirea informatiilor:</label>
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                </div>
+
+                <div>
+                    <input type="submit" id="submit" class="form-control submit" value="TRIMITE"/>
+                </div>
+            </form>
+        </div>
+            <footer id="count"></footer>
+        <script src="Inregistrare.js"></script>
+    </body>
+
+</html>
+
+
+
